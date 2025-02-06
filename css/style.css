@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.profile-card {
+    display: block;
+    padding: 15px;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    transition: transform 0.3s;
+    text-decoration: none;
+    color: white;
+}
+
+.profile-card:hover {
+    transform: scale(1.05);
+    background-color: #ff0000;
+}
+
+.floating-image {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 150px;
+    opacity: 0.8;
+}
