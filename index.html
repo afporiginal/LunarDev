@@ -1,50 +1,81 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AFPL | LunarDev</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script defer src="js/scripts.js"></script>
-    <script defer src="js/spotify.js"></script>
-    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LunarDev - About Me</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="bg-black text-white">
-
-    <!-- Hero Section -->
-    <section class="text-center py-20">
-        <h1 class="text-6xl font-bold text-red-500">AFPL</h1>
-        <p class="mt-4 text-lg italic">"É necessário ter o caos dentro de si para gerar uma estrela." — Nietzsche</p>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">Sobre Mim</a></li>
+        <li><a href="#profiles">Perfis & Insígnias</a></li>
+        <li><a href="#discord">Discord</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <!-- Seção Hero -->
+    <section id="hero" class="hero">
+      <h1>AFPL</h1>
+      <p class="animated-text">
+        "É necessário ter o caos dentro de si para gerar uma estrela." — Friedrich Nietzsche
+      </p>
     </section>
-
-    <!-- Sobre Mim -->
-    <section class="py-20 bg-gray-900 text-center px-8">
-        <h2 class="text-4xl font-bold text-red-500 mb-6">Sobre Mim</h2>
-        <p class="max-w-3xl mx-auto text-lg">
-            Sou alguém que preza por se vestir bem, com bons perfumes e roupas no dia a dia. Já joguei vôlei em um time profissional sub-16 e tenho um gosto peculiar por mulheres mais velhas com cabelos avermelhados. Curto Fortnite, criar sites e explorar diversas atividades por diversão. Sou fã da Yor de Spy x Family, que simboliza minha paixão pelo design e cultura pop.
-        </p>
+    
+    <!-- Seção Sobre Mim -->
+    <section id="about" class="about">
+      <h2>Sobre Mim</h2>
+      <p>
+        Sou alguém que preza por se vestir bem, com bons perfumes e roupas no dia a dia. Já joguei vôlei em um time profissional sub-16 e tenho um gosto peculiar por mulheres mais velhas com cabelos em tom avermelhado/vinho. Curto jogar Fortnite, criar sites, mapas e explorar diversas atividades por diversão. Além disso, admiro o estilo e a elegância, inspirado inclusive na personagem Yor de Spy x Family, que simboliza minha paixão pelo design e pela cultura pop.
+      </p>
     </section>
-
-    <!-- Perfis -->
-    <section class="py-20 px-8 text-center">
-        <h2 class="text-4xl font-bold text-red-500 mb-6">Perfis & Insígnias</h2>
-        <div class="grid md:grid-cols-3 gap-6">
-            <a href="https://discord.com/users/520354713724780554" target="_blank" class="profile-card">🎮 Discord</a>
-            <a href="https://github.com/afporiginal" target="_blank" class="profile-card">💻 GitHub</a>
-            <a href="https://www.roblox.com/users/6214351089/profile" target="_blank" class="profile-card">👾 Roblox</a>
+    
+    <!-- Seção Perfis & Insígnias -->
+    <section id="profiles" class="profiles">
+      <h2>Perfis & Insígnias</h2>
+      <div class="profile-container">
+        <div class="profile">
+          <div class="icon">💻</div>
+          <h3>GitHub</h3>
+          <p>afporiginal</p>
+          <a href="https://github.com/afporiginal" target="_blank">Visitar</a>
         </div>
+        <div class="profile">
+          <div class="icon">👾</div>
+          <h3>Roblox</h3>
+          <p>afploriginal</p>
+          <a href="https://www.roblox.com/users/6214351089/profile" target="_blank">Visitar</a>
+        </div>
+      </div>
     </section>
-
-    <!-- Spotify -->
-    <section class="py-20 bg-gray-900 text-center">
-        <h2 class="text-4xl font-bold text-red-500 mb-6">Top Spotify Tracks</h2>
-        <div id="spotify-tracks" class="grid gap-4"></div>
+    
+    <!-- Seção Discord (dados estáticos) -->
+    <section id="discord" class="discord">
+      <h2>Discord</h2>
+      <div class="discord-profile">
+        <img src="assets/discord-avatar.png" alt="Avatar do Discord">
+        <div class="discord-info">
+          <h3>SeuDiscordNome<span>#1234</span></h3>
+          <a href="https://discord.com/users/seu_user_id" target="_blank">Perfil no Discord</a>
+        </div>
+      </div>
     </section>
-
-    <!-- Imagem Flutuante -->
-    <img src="assets/yor.png" alt="Yor" class="floating-image" id="yor-image">
-
+  </main>
+  
+  <!-- Imagem flutuante da Yor -->
+  <div class="floating-image">
+    <img src="assets/yor.png" alt="Yor - Spy x Family">
+  </div>
+  
+  <footer>
+    <p>&copy; 2025 LunarDev</p>
+  </footer>
+  
+  <script src="js/script.js"></script>
 </body>
 </html>
